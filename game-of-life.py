@@ -57,16 +57,16 @@ current_field = deepcopy(next_field)
 # print(clock.get_fps())
 pygame.display.flip()
 
-state = True
+#ignore it. It's experimental var
+state = False
+
 while True:
 
     surface.fill(pygame.Color('indigo'))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            if state:
-                state = False
-            else:
                 exit()
+
     if not state:
         [pygame.draw.line(surface, pygame.Color('darkorchid4'), (x, 0), (x, HEIGHT)) for x in range(0, WIDTH, TILE)]
         [pygame.draw.line(surface, pygame.Color('darkorchid4'), (0, y), (WIDTH, y)) for y in range(0, HEIGHT, TILE)]
