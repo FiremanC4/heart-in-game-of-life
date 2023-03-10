@@ -1,0 +1,9 @@
+#It's better to create a venv. Use this command
+#python -m venv .env
+
+#To install the required packages use this command:
+#pip install -r requirements.txt
+
+#There required library below:
+pygame
+
